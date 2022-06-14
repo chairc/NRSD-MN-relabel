@@ -9,6 +9,5 @@ We thank the authors of the paper for licensing the NRSD dataset to us.
 
 Dataset Original Repository: [MCnet](https://github.com/zdfcvsn/MCnet)
 
-Dataset Original paper: Zhang, D., et al. (2020). "MCnet: Multiple context information segmentation network of no-service rail surface defects." IEEE Transactions on Instrumentation and Measurement 70: 1-9.
-
+Dataset Original paper: D. Zhang, K. Song, J. Xu, Y. He, M. Niu and Y. Yan (2020). "MCnet: Multiple context information segmentation network of no-service rail surface defects." IEEE Transactions on Instrumentation and Measurement 70: 1-9.
 
