@@ -1,3 +1,11 @@
+## About AMFF-YOLOX
+
+Detailed Reference: /code/yolox/models
+
+We will prepare a detailed README after the paper is accepted.
+
+By the way, Thanks YOLOX!
+
 <div align="center"><img src="assets/logo.png" width="350"></div>
 <img src="assets/demo.png" >
 
@@ -124,6 +132,7 @@ python -m yolox.tools.train -n yolox-s -d 8 -b 64 --fp16 -o [--cache]
 * --cache: caching imgs into RAM to accelarate training, which need large system RAM. 
 
   
+
 When using -f, the above commands are equivalent to:
 ```shell
 python -m yolox.tools.train -f exps/default/yolox_s.py -d 8 -b 64 --fp16 -o [--cache]
@@ -131,7 +140,7 @@ python -m yolox.tools.train -f exps/default/yolox_s.py -d 8 -b 64 --fp16 -o [--c
                                exps/default/yolox_l.py
                                exps/default/yolox_x.py
 ```
-  
+
 **Multi Machine Training**
 
 We also support multi-nodes training. Just add the following args:
@@ -153,7 +162,7 @@ See more information with the following command:
 ```shell
 python -m yolox.tools.train --help
 ```
-  
+
 </details>
 
 
