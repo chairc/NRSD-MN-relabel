@@ -23,17 +23,17 @@ An overview of the ECA module. Each attention group consists of a CSP layer, an 
 
 An overview of the ASFF module with attention mechanism. he feature extraction layer in this paper by retaining the ECA module final output of three different scales of feature maps. The adaptive spatial feature fusion mechanism weights and sums the feature map information at different scales of 20 × 20, 40 × 40 and 80 × 80 for these three feature map scales, and calculates the corresponding weights.
 
-In Equation 1, $X^{eca1\rightarrow{level}}_{ij}$, $X^{eca2\rightarrow{level}}_{ij}$, $X^{eca3\rightarrow{level}}_{ij}$ represent the feature information from PANet's three attention mechanisms (ECA-1, ECA-2 and ECA-3), respectively. We multiply the above feature information with the weight parameters $\alpha^{level}_{ij}$, $\beta^{level}_{ij}$ and $\gamma^{level}_{ij}$ (i.e., the feature vector shared by $\alpha$, $\beta$, $\gamma$ at position $(i, j)$ among channels), adjust them to the same size of the feature map and then add them together to get a new fusion layer.
+In Equation 1, $X^{eca1\rightarrow{level}}\_{ij}$, $X^{eca2\rightarrow{level}}\_{ij}$, $X^{eca3\rightarrow{level}}\_{ij}$ represent the feature information from PANet's three attention mechanisms (ECA-1, ECA-2 and ECA-3), respectively. We multiply the above feature information with the weight parameters $\alpha^{level}\_{ij}$, $\beta^{level}\_{ij}$ and $\gamma^{level}\_{ij}$ (i.e., the feature vector shared by $\alpha$, $\beta$, $\gamma$ at position $(i, j)$ among channels), adjust them to the same size of the feature map and then add them together to get a new fusion layer.
 
-(1) $y^{level}_{ij} = \alpha^{level}_{ij} \cdot X^{eca1\rightarrow{level}}_{ij} + \beta^{level}_{ij} \cdot X^{eca2\rightarrow{level}}_{ij} + \gamma^{level}_{ij} \cdot X^{eca3\rightarrow{level}}_{ij}$
+$$(1)\    y^{level}\_{ij} = \alpha^{level}\_{ij} \cdot X^{eca1\rightarrow{level}}\_{ij} + \beta^{level}\_{ij} \cdot X^{eca2\rightarrow{level}}\_{ij} + \gamma^{level}\_{ij} \cdot X^{eca3\rightarrow{level}}\_{ij}$$
 
-In Equation 2, $\alpha^{level}_{ij}$, $\beta^{level}_{ij}$ and $\gamma^{level}_{ij}$ are defined by the softmax function as parameters with sum 1 and range belonging to [0,1] in Equation 3. Equation 4 is the calculation of each weight parameter, where $\lambda^{level}_{\alpha}$, $\lambda^{level}_{\beta}$ and $\lambda^{level}_{\gamma}$ are calculated by convolution in $X^{eca1\rightarrow{level}}$, $X^{eca2\rightarrow{level}}$, $X^{eca3\rightarrow{level}}$, and $\theta$ is the set of weight parameters $\alpha$, $\beta$ and $\gamma$.
+In Equation 2, $\alpha^{level}\_{ij}$, $\beta^{level}\_{ij}$ and $\gamma^{level}\_{ij}$ are defined by the softmax function as parameters with sum 1 and range belonging to [0,1] in Equation 3. Equation 4 is the calculation of each weight parameter, where $\lambda^{level}\_{\alpha}$, $\lambda^{level}\_{\beta}$ and $\lambda^{level}\_{\gamma}$ are calculated by convolution in $X^{eca1\rightarrow{level}}$, $X^{eca2\rightarrow{level}}$, $X^{eca3\rightarrow{level}}$, and $\theta$ is the set of weight parameters $\alpha$, $\beta$ and $\gamma$.
 
-(2) $\alpha^{level}_{ij} + \beta^{level}_{ij} + \gamma^{level}_{ij} = 1$
+$$(2)\    \alpha^{level}\_{ij} + \beta^{level}\_{ij} + \gamma^{level}\_{ij} = 1 $$
 
-(3) $\alpha^{level}_{ij}, \beta^{level}_{ij}, \gamma^{level}_{ij} \in [0, 1]$
+$$(3)\    \alpha^{level}\_{ij}, \beta^{level}\_{ij}, \gamma^{level}\_{ij} \in [0, 1] $$
 
-(4) $\theta^{level}_{ij} = \frac{e^{\lambda^{level}_{\theta_{ij}}}}{e^{\lambda^{level}_{\alpha_{ij}}} + e^{\lambda^{level}_{\beta_{ij}}} + e^{\lambda^{level}_{\gamma_{ij}}}}, \theta \in [\alpha, \beta, \gamma]$
+$$(4)\    \theta^{level}\_{ij} = \frac{e^{\lambda^{level}\_{\theta_{ij}}}}{e^{\lambda^{level}\_{\alpha_{ij}}} + e^{\lambda^{level}\_{\beta_{ij}}} + e^{\lambda^{level}\_{\gamma_{ij}}}}, \theta \in [\alpha, \beta, \gamma] $$
 
 ![The bottleneck design structure improvement.](./demo/fig_bottleneck.png "Figure 5. The bottleneck design structure improvement.")
 
