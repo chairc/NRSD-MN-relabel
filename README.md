@@ -62,11 +62,13 @@ We thank the authors of the paper for licensing the NRSD dataset to us.
 
 ![license](./demo/license.jpg)
 
-**Datasets URL**：[https://drive.google.com/drive/folders/13r-l_OEUt63A8K-ol6jQiaKNuGdseZ7j?usp=sharing](https://drive.google.com/drive/folders/13r-l_OEUt63A8K-ol6jQiaKNuGdseZ7j?usp=sharing)
+**Datasets URL**：[https://drive.google.com/drive/folders/13r-l_OEUt63A8K-ol6jQiaKNuGdseZ7j?usp=sharing](https://drive.google.com/drive/folders/13r-l_OEUt63A8K-ol6jQiaKNuGdseZ7j?usp=sharing) and [https://huggingface.co/datasets/chairc/NRSD-MN-relabel](https://huggingface.co/datasets/chairc/NRSD-MN-relabel)
+
+**Datasets Paper**: Chen Y, Tang Y, Hao H, et al. AMFF-YOLOX: Towards an Attention Mechanism and Multiple Feature Fusion Based on YOLOX for Industrial Defect Detection[J]. *Electronics*, 2023, 12(7): 1662.
 
 Dataset Original Repository: [MCnet](https://github.com/zdfcvsn/MCnet)
 
-Dataset Original paper: D. Zhang, K. Song, J. Xu, Y. He, M. Niu and Y. Yan (2020). "MCnet: Multiple context information segmentation network of no-service rail surface defects." *IEEE Transactions on Instrumentation and Measurement* 70: 1-9.
+Dataset Original Paper: Zhang D, Song K, Xu J, et al. MCnet: Multiple context information segmentation network of no-service rail surface defects[J]. *IEEE Transactions on Instrumentation and Measurement*, 2020, 70: 1-9.
 
 If you want to cite this.
 ```
