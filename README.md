@@ -5,7 +5,7 @@ We are pleased to announce that our paper has been published, titled "AMFF-YOLOX
 
 Click the datasets [url](https://drive.google.com/drive/folders/13r-l_OEUt63A8K-ol6jQiaKNuGdseZ7j?usp=sharing), you can get the defect dataset of NRSD-MN-relabel.
 
-**The Overview of AMFF-YOLOX**
+## The Overview of AMFF-YOLOX
 
 ![an overview of AMFF-YOLOX.](./demo/fig_overview.png "Figure 1. An overview of the detection network. The blue block is the backbone, the red block is the attention module, the orange block is PANet, the purple block is the adaptive spatial feature fusion, and the green is the decouple head.")
 
@@ -39,7 +39,7 @@ $$(4)\    \theta^{level}\_{ij} = \frac{e^{\lambda^{level}\_{\theta_{ij}}}}{e^{\l
 
 The bottleneck design structure improvement [ [code](./code/yolox/models/network_blocks.py#L63) ]. Based on the CSP-Darknet model, this paper refers to the bottleneck design pattern of ConvNeXt. A SiLU activation function is removed after the 1 × 1 convolution of the model, and a normalization function is removed after the 3 × 3 convolution, as shown in Figure 5.
 
-**Result in Public Datasets**
+## Result in Public Datasets
 
 ![The NRSD-MN dataset results.](./demo/fig_result_nrsd.png "Figure 6. The NRSD-MN dataset results.")
 
@@ -56,11 +56,13 @@ The NEU-DET dataset results. (a) Ground truth of the dataset. (b) Baseline predi
 The PCB dataset results. (a) Ground truth of the dataset. (b) Baseline prediction label.
 (c) Model prediction label of this paper.
 
-**License**
+## License
 
 We thank the authors of the paper for licensing the NRSD dataset to us.
 
 ![license](./demo/license.jpg)
+
+## Datasets
 
 **Datasets URL**：[https://drive.google.com/drive/folders/13r-l_OEUt63A8K-ol6jQiaKNuGdseZ7j?usp=sharing](https://drive.google.com/drive/folders/13r-l_OEUt63A8K-ol6jQiaKNuGdseZ7j?usp=sharing) and [https://huggingface.co/datasets/chairc/NRSD-MN-relabel](https://huggingface.co/datasets/chairc/NRSD-MN-relabel)
 
@@ -70,7 +72,20 @@ Dataset Original Repository: [MCnet](https://github.com/zdfcvsn/MCnet)
 
 Dataset Original Paper: Zhang D, Song K, Xu J, et al. MCnet: Multiple context information segmentation network of no-service rail surface defects[J]. *IEEE Transactions on Instrumentation and Measurement*, 2020, 70: 1-9.
 
-If you want to cite this.
+## Citation
+
+**This paper has been cited by the following papers:**
+
+1. Yan R, Zhang R, Bai J, et al. STMS-YOLOv5: A Lightweight Algorithm for Gear Surface Defect Detection[J]. Sensors, 2023, 23(13): 5992.
+2. Zhuo S, Shi J, Zhou X, et al. YOLOv7-TID: A Lightweight Network for PCB Intelligent Detection[J]. IEEE Access, 2024.
+3. Ji T, Zhao Q, An K, et al. A Real-Time PCB defect detection model based on enhanced semantic information fusion[J]. Signal, Image and Video Processing, 2024, 18(6): 4945-4959.
+4. Pan Y, Zhang L, Zhang Y. Rapid Detection of PCB Defects Based on YOLOx-Plus and FPGA (January 2024)[J]. IEEE Access, 2024.
+5. 李刚, 王选宏, 张豆, 等. 一种轻量化的光学遥感图像舰船目标检测算法[J]. 空间电子技术, 2024, 21(6): 50-56.
+6. Li G, Wang X, Zhang D, et al. SP-Y OLOX: A lightweight ship target detection algorithm based on remote sensing images[C]//2024 43rd Chinese Control Conference (CCC). IEEE, 2024: 8898-8903.
+7. Ihianle D I K, Kaur M, Chauhan K K, et al. Classification and Localization of Defects Using Single-Shot Multibox Detector[J]. Available at SSRN 4673716.
+
+**If you want to cite this.**
+
 ```
 @Article{electronics12071662,
 author = {Chen, Yu and Tang, Yongwei and Hao, Huijuan and Zhou, Jun and Yuan, Huimiao and Zhang, Yu and Zhao, Yuanyuan},
