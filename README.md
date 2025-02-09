@@ -1,5 +1,5 @@
-# NRSD-MN-relabel Readme
-This is the README of the NRSD-MN relabeled dataset.
+# AMFF-YOLOX(NRSD-MN-relabel) Readme
+This is the README of the AMFF-YOLOX(NRSD-MN-relabel) dataset.
 
 We are pleased to announce that our paper has been published, titled "AMFF-YOLOX: Towards an Attention Mechanism and Multiple Feature Fusion Based on YOLOX for Industrial Defect Detection"，with the link [https://www.mdpi.com/2079-9292/12/7/1662](https://www.mdpi.com/2079-9292/12/7/1662) or [pdf](./paper/) version.
 
